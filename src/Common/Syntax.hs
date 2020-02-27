@@ -83,7 +83,7 @@ instance Show DataKind where
   show Retractive = "rectype"
 
 data DataDef = DataDefNormal | DataDefRec | DataDefOpen
-             deriving Eq
+             deriving (Eq, Show)
 
 
 dataDefIsRec ddef

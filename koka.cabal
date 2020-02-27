@@ -26,7 +26,7 @@ library
 --                        , text >=1.2 && <2
 --                        , array >=0.5 && <1
 --                        , process >=1.4 && <2
---                        , directory >=1.3 && <2                       
+--                        , directory >=1.3 && <2
   hs-source-dirs:      src, src/Platform/cpp
   c-sources:           src/Platform/cpp/Platform/cconsole.c
   include-dirs:        src/Platform/cpp/Platform
@@ -52,14 +52,14 @@ library
     Common.Unique
     Compiler.Compile
     Type.Kind
-    Type.TypeVar  
+    Type.TypeVar
     Type.Interlang
     Syntax.Parse
     Common.Error
     Common.IdSet
     Common.Message
     Common.QNameMap
-    Common.ResumeKind    
+    Common.ResumeKind
     Syntax.Colorize
     Syntax.Highlight
     Syntax.Layout
@@ -67,15 +67,15 @@ library
     Syntax.Lexer
     Syntax.Promote
     Syntax.RangeMap
-    Syntax.Syntax    
+    Syntax.Syntax
+    Lib.PPrint
+    Lib.Printer
+    Lib.Trace
   other-modules:
     Type.Type
     Kind.ImportMap
     Kind.Kind
     Kind.Synonym
-    Lib.PPrint
-    Lib.Printer
-    Lib.Trace
     Platform.Config
     Platform.Console
     Platform.Filetime

@@ -126,14 +126,14 @@ data TypeDef t u k
             , typeDefDef  :: DataDef
             , typeDefIsExtend :: Bool -- ^ True if this is an extension; the binder contains a qualified id (and is not a declaration)
             , typeDefDoc  :: String
-            }
+            } deriving (Show)
 
 data TypeBinder k
   = TypeBinder{ tbinderName :: Name -- ^ name
               , tbinderKind :: k  -- ^ kind
               , tbinderNameRange :: Range -- ^ name range
               , tbinderRange :: Range -- ^ total range
-              }
+              } deriving (Show)
 
 -- | Constructor: name, existentials, type parameters, name range, total range, and visibility
 data UserCon t u k
@@ -145,7 +145,7 @@ data UserCon t u k
             , userconRange :: Range           --  ^ total range
             , userconVis :: Visibility     -- ^  visibility
             , userconDoc :: String
-            }
+            } deriving (Show)
 
 {--------------------------------------------------------------------------
   Definitions
@@ -158,7 +158,7 @@ type DefGroups t
 data DefGroup t
   = DefRec    [Def t]
   | DefNonRec (Def t)
-
+  deriving (Show)
 type Defs t
   = [Def t]
 
@@ -170,7 +170,7 @@ data ValueBinder t e
                                        -- Pattern bindings ('PatVar') use unit '()'.
                , binderNameRange :: Range  -- ^ name range
                , binderRange :: Range      -- ^ full range
-               }
+               } deriving (Show)
 
 
 --  | A value or function definition
@@ -180,7 +180,7 @@ data Def t
        , defVis    :: Visibility
        , defSort   :: DefSort
        , defDoc    :: String
-       }
+       } deriving (Show)
 
 
 defIsVal def
@@ -209,7 +209,7 @@ data Expr t
                   (Maybe t) [ValueBinder (Maybe t) ()]
                   (Expr t) (Expr t) (Expr t) [HandlerBranch t] Range Range
   | Inject t (Expr t) Bool {-behind?-} Range
-
+  deriving (Show)
 
 data HandlerOverride
   = HandlerNoOverride | HandlerOverride
@@ -217,7 +217,7 @@ data HandlerOverride
 
 data HandlerScope
   = HandlerNoScope | HandlerScoped
-  deriving (Eq)
+  deriving (Eq, Show)
 
 data HandlerBranch t
   = HandlerBranch{ hbranchName :: Name
@@ -227,13 +227,13 @@ data HandlerBranch t
                  , hbranchResumeKind :: ResumeKind
                  , hbranchNameRange :: Range
                  , hbranchPatRange  :: Range
-                 }
+                 } deriving (Show)
 
 data Branch t
   = Branch{ branchPattern :: (Pattern t)
           , branchGuard :: (Expr t)
           , branchExpr   :: (Expr t)
-          }
+          } deriving (Show)
 
 -- | Patterns
 data Pattern t
@@ -243,6 +243,7 @@ data Pattern t
   | PatCon    Name    [(Maybe (Name,Range), Pattern t)] Range Range  -- name range and full range
   | PatParens (Pattern t) Range
   | PatLit    Lit
+  deriving (Show)
 
 -- | Literals
 data Lit
@@ -250,6 +251,7 @@ data Lit
   | LitFloat    Double  Range
   | LitChar     Char     Range
   | LitString   String Range
+  deriving (Show)
 
 {--------------------------------------------------------------------------
   types and Kinds
@@ -270,6 +272,7 @@ data KUserType k
   | TpParens   (KUserType k)         Range
   | TpAnn      (KUserType k)  k
 
+
 type UserType
   = KUserType UserKind
 
@@ -280,7 +283,7 @@ data UserKind
   | KindArrow  UserKind UserKind
   | KindParens UserKind Range
   | KindNone  -- flags that there is no explicit kind annotation
-
+  deriving (Show)
 
 
 {--------------------------------------------------------------------------
