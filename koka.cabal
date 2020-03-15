@@ -71,6 +71,11 @@ library
     Lib.PPrint
     Lib.Printer
     Lib.Trace
+    Interpreter.Interpret
+    Interpreter.Command
+    Platform.ReadLine
+    Compiler.Options
+    Compiler.Package
   other-modules:
     Type.Type
     Kind.ImportMap
@@ -84,8 +89,6 @@ library
     Backend.CSharp.FromCore
     Backend.JavaScript.FromCore
     Compiler.Module
-    Compiler.Options
-    Compiler.Package
     Core.AnalysisMatch
     Core.AnalysisResume
     Core.BindingGroups
