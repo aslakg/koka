@@ -9,7 +9,7 @@
     Definition of higher-ranked types and utility functions over them.
 -}
 -----------------------------------------------------------------------------
-module Type.Type (-- * Types
+module Koka.Type.Type (-- * Types
                     Type(..), Scheme, Sigma, Rho, Tau, Effect, InferType, Pred(..)
                   , Flavour(..)
                   , DataInfo(..), DataKind(..), ConInfo(..), SynInfo(..)

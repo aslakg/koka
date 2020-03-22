@@ -17,9 +17,9 @@ import Data.Maybe
 import Common.Name
 import Common.Range
 import Common.Failure
-import Type.Type
-import Type.Pretty ()
-import Type.TypeVar
+import Koka.Type.Type
+import Koka.Type.Pretty ()
+import Koka.Type.TypeVar
 
 
 import Core.Core

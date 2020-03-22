@@ -22,8 +22,8 @@ import Kind.Kind
 import Kind.Pretty hiding (prettyKind)
 import Kind.Synonym
 import Kind.ImportMap
-import Type.Type
-import Type.Pretty
+import Koka.Type.Type
+import Koka.Type.Pretty
 
 -- import Lib.Trace
 

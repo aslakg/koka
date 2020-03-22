@@ -32,13 +32,13 @@ import Common.Error
 import Common.Syntax
 
 import Kind.Kind( kindStar, isKindEffect, kindFun, kindEffect,   kindHandled )
-import Type.Type
-import Type.Kind
-import Type.TypeVar
-import Type.Pretty hiding (Env)
-import qualified Type.Pretty as Pretty
-import Type.Assumption
-import Type.Operations( freshTVar )
+import Koka.Type.Type
+import Koka.Type.Kind
+import Koka.Type.TypeVar
+import Koka.Type.Pretty hiding (Env)
+import qualified Koka.Type.Pretty as Pretty
+import Koka.Type.Assumption
+import Koka.Type.Operations( freshTVar )
 import Core.Core
 import qualified Core.Core as Core
 import Core.Pretty

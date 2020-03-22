@@ -11,7 +11,7 @@
 -- Type inference. Relies on results from kind inference
 -----------------------------------------------------------------------------
 
-module Type.Infer (inferTypes, coreVarInfoFromNameInfo ) where
+module Koka.Type.Infer (inferTypes, coreVarInfoFromNameInfo ) where
 
 import qualified Lib.Trace
 import Data.List(partition,sortBy)
@@ -51,13 +51,13 @@ import Kind.Synonym
 import Kind.Newtypes
 import Kind.ImportMap
 
-import Type.Type
-import Type.Kind( handledToLabel, getKind )
-import Type.Pretty
-import Type.Assumption
-import Type.TypeVar
-import qualified Type.Operations as Op
-import Type.InferMonad
+import Koka.Type.Type
+import Koka.Type.Kind( handledToLabel, getKind )
+import Koka.Type.Pretty
+import Koka.Type.Assumption
+import Koka.Type.TypeVar
+import qualified Koka.Type.Operations as Op
+import Koka.Type.InferMonad
 
 import qualified Core.CoreVar as CoreVar
 import Core.AnalysisMatch( analyzeBranches )

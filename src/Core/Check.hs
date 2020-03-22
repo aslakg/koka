@@ -29,14 +29,14 @@ import Core.CoreVar
 -- import Core.Monadic( monType )
 
 import Kind.Kind
-import Type.Type
-import Type.TypeVar
-import Type.Assumption
-import Type.Pretty
-import Type.Kind
-import Type.TypeVar
-import Type.Unify( unify, runUnify )
-import Type.Operations( instantiate )
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Assumption
+import Koka.Type.Pretty
+import Koka.Type.Kind
+import Koka.Type.TypeVar
+import Koka.Type.Unify( unify, runUnify )
+import Koka.Type.Operations( instantiate )
 
 import qualified Data.Set as S
 

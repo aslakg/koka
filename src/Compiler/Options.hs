@@ -36,7 +36,7 @@ import Compiler.Package
 {--------------------------------------------------------------------------
   Convert flags to pretty environment
 --------------------------------------------------------------------------}
-import qualified Type.Pretty as TP
+import qualified Koka.Type.Pretty as TP
 
 prettyEnvFromFlags :: Flags -> TP.Env
 prettyEnvFromFlags flags

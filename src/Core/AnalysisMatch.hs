@@ -22,8 +22,8 @@ import Common.Range
 import Common.Unique()
 import Common.NamePrim( namePatternMatchError, nameSystemCore )
 import Kind.Kind( kindStar )
-import Type.Type
-import Type.Pretty ()
+import Koka.Type.Type
+import Koka.Type.Pretty ()
 import Core.Core
 
 analyzeBranches :: [Branch] -> Name -> Range -> [DataInfo] -> (Bool,[(Range,Doc)],[Branch])

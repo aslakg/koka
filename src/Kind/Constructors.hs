@@ -30,8 +30,8 @@ import Common.Failure( failure )
 import Common.Name
 import Common.Syntax  ( Visibility(..))
 import Kind.Pretty    ( kindColon )
-import Type.Type
-import Type.Pretty
+import Koka.Type.Type
+import Koka.Type.Pretty
 import qualified Core.Core as Core
   
 {--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ instance Show Constructors where
 
 instance Pretty Constructors where
   pretty syns
-    = ppConstructors Type.Pretty.defaultEnv syns
+    = ppConstructors Koka.Type.Pretty.defaultEnv syns
     
 ppConstructors showOptions (Constructors m)
     = vcat [fill 8 (pretty name) <.> kindColon (colors showOptions) <+>

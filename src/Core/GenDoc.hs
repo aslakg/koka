@@ -25,12 +25,12 @@ import Common.Failure
 import Common.Syntax
 import Kind.Kind
 import Kind.Pretty
-import Type.Type
-import Type.TypeVar( tvsList, ftv )
-import Type.Pretty 
+import Koka.Type.Type
+import Koka.Type.TypeVar( tvsList, ftv )
+import Koka.Type.Pretty
 
 import Kind.Assumption
-import Type.Assumption
+import Koka.Type.Assumption
 
 import Syntax.Lexeme
 import Syntax.Highlight

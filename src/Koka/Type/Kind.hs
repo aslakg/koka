@@ -5,7 +5,7 @@
 -- terms of the Apache License, Version 2.0. A copy of the License can be
 -- found in the file "license.txt" at the root of this distribution.
 -----------------------------------------------------------------------------
-module Type.Kind ( HasKind( getKind )
+module Koka.Type.Kind ( HasKind( getKind )
                  , handledToLabel
                  , HandledSort(..)
                  , getHandledEffect, getHandledEffectX
@@ -16,7 +16,7 @@ import Data.Maybe( isJust )
 import Common.NamePrim( nameTpHandled, nameTpHandled1 )
 import Common.Failure( failure )
 import Kind.Kind
-import Type.Type
+import Koka.Type.Type
 
 
 handledToLabel :: Type -> Type

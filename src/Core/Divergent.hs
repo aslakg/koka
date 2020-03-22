@@ -22,8 +22,8 @@ import Common.NamePrim( nameSubStr1, namesSameSize, nameEffectOpen, nameDecreasi
 import Common.Failure
 import Common.Syntax
 import qualified Common.NameSet as S
-import Type.Type
-import Type.Pretty ()
+import Koka.Type.Type
+import Koka.Type.Pretty ()
 import Core.Core
 import Core.Pretty()
 import Core.Uniquefy( uniquefyDefGroup )

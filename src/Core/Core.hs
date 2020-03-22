@@ -74,10 +74,10 @@ import Common.Unique
 import Common.NamePrim( nameTrue, nameFalse, nameTuple, nameTpBool, nameEffectOpen, nameReturn, nameTrace, nameLog, nameSystemCore )
 import Common.Syntax
 import Kind.Kind
-import Type.Type
-import Type.Pretty ()
-import Type.TypeVar
-import Type.Kind    ( getKind, getHandledEffect, HandledSort(ResumeMany) )
+import Koka.Type.Type
+import Koka.Type.Pretty ()
+import Koka.Type.TypeVar
+import Koka.Type.Kind    ( getKind, getHandledEffect, HandledSort(ResumeMany) )
 
 isExprUnit (Con tname _)  = getName tname == nameTuple 0
 isExprUnit _              = False

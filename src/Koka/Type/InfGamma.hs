@@ -6,7 +6,7 @@
 -- found in the file "license.txt" at the root of this distribution.
 -----------------------------------------------------------------------------
 
-module Type.InfGamma (
+module Koka.Type.InfGamma (
                     -- * Typothesis
                       InfGamma
                     , infgammaNew
@@ -31,10 +31,10 @@ import Common.Range
 import Common.Name
 import Common.ColorScheme
 
-import Type.Type
-import Type.TypeVar
-import Type.Pretty
-import Type.Assumption( NameInfo(..) )
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Pretty
+import Koka.Type.Assumption( NameInfo(..) )
 
 {--------------------------------------------------------------------------
   InfGamma
@@ -111,7 +111,7 @@ instance Show InfGamma where
 
 instance Pretty InfGamma where
   pretty g
-    = ppInfGamma Type.Pretty.defaultEnv g
+    = ppInfGamma Koka.Type.Pretty.defaultEnv g
     
     
 ppInfGamma :: Env -> InfGamma -> Doc

@@ -36,7 +36,7 @@ import Kind.Kind
 import Kind.Pretty( prettyKind, kindColon )  
 import Kind.ImportMap
 
-import Type.Type
+import Koka.Type.Type
 import qualified Core.Core as Core
 
 {--------------------------------------------------------------------------

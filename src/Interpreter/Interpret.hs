@@ -39,9 +39,9 @@ import Syntax.Highlight       ( highlightPrint )
 import Kind.Synonym           ( synonymsIsEmpty,synonymsDiff, ppSynonyms )
 import Kind.Assumption        ( kgammaFind, kgammaIsEmpty, ppKGamma )
 import Kind.Pretty            ( prettyKind )
-import Type.Type              ( Scheme )
-import Type.Pretty            ( ppScheme, ppSchemeEffect, Env(context,importsMap))
-import Type.Assumption        ( gammaIsEmpty, ppGamma, infoType, gammaFilter )
+import Koka.Type.Type              ( Scheme )
+import Koka.Type.Pretty            ( ppScheme, ppSchemeEffect, Env(context,importsMap))
+import Koka.Type.Assumption        ( gammaIsEmpty, ppGamma, infoType, gammaFilter )
 
 import Compiler.Options
 import Compiler.Compile

@@ -46,13 +46,13 @@ import Syntax.Highlight
 
 import Kind.Kind
 import Kind.Pretty
-import Type.Pretty
+import Koka.Type.Pretty
 import Syntax.RangeMap
 
 import Platform.Config( programName, sourceExtension )
 
 import Kind.Assumption
-import Type.Assumption
+import Koka.Type.Assumption
 import Core.Core (canonicalSplit)
 
 -----------------------------------------------------------

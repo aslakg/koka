@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------
 -- Definition of higher-ranked types and utility functions over them.
 -----------------------------------------------------------------------------
-module Type.Operations( instantiate
+module Koka.Type.Operations( instantiate
                       , instantiateEx, instantiateNoEx, extend
                       , skolemize, skolemizeEx
                       , freshTVar
@@ -22,8 +22,8 @@ import Common.Range
 import Common.Unique
 
 import Kind.Kind
-import Type.Type
-import Type.TypeVar
+import Koka.Type.Type
+import Koka.Type.TypeVar
 import Core.Core as Core
 
 --------------------------------------------------------------------------

@@ -64,11 +64,11 @@ import Kind.Newtypes          ( newtypesCompose )
 import Kind.Infer             ( inferKinds )
 import Kind.Kind              ( kindEffect )
 
-import Type.Type
-import Type.Kind              ( containsHandledEffect, getHandledEffectX )
-import Type.Assumption        ( gammaLookupQ, extractGamma, infoType, NameInfo(..), gammaUnions, extractGammaImports, gammaLookup, gammaMap )
-import Type.Infer             ( inferTypes )
-import Type.Pretty hiding     ( verbose )
+import Koka.Type.Type
+import Koka.Type.Kind              ( containsHandledEffect, getHandledEffectX )
+import Koka.Type.Assumption        ( gammaLookupQ, extractGamma, infoType, NameInfo(..), gammaUnions, extractGammaImports, gammaLookup, gammaMap )
+import Koka.Type.Infer             ( inferTypes )
+import Koka.Type.Pretty hiding     ( verbose )
 import Compiler.Options       ( Flags(..), prettyEnvFromFlags, colorSchemeFromFlags, prettyIncludePath )
 
 import Compiler.Module

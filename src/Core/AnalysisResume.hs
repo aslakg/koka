@@ -24,8 +24,8 @@ import Common.Unique()
 import Common.NamePrim( namePatternMatchError, nameSystemCore )
 import Common.ResumeKind( ResumeKind(..) )
 import Kind.Kind( kindStar )
-import Type.Type
-import Type.Pretty (defaultEnv)
+import Koka.Type.Type
+import Koka.Type.Pretty (defaultEnv)
 import Core.Core
 import Core.CoreVar
 import Core.Pretty

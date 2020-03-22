@@ -5,7 +5,7 @@
 -- terms of the Apache License, Version 2.0. A copy of the License can be
 -- found in the file "license.txt" at the root of this distribution.
 -----------------------------------------------------------------------------
-module Type.Pretty (-- * Pretty
+module Koka.Type.Pretty (-- * Pretty
                     ppType, ppScheme, ppTypeVar, ppDataInfo, ppSynInfo
                    ,prettyDataInfo, prettyConInfo
                    ,ppSchemeEffect, ppDeclType, ppPred
@@ -34,9 +34,9 @@ import Kind.Kind
 import Kind.Pretty
 import Kind.ImportMap
 
-import Type.Type
-import Type.TypeVar
-import Type.Kind
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Kind
 
 typeColon colors
   = color (colorSep colors) (text ":")
@@ -204,7 +204,7 @@ instance Show DataInfo where
   show = show . pretty
 
 instance Pretty DataInfo where
-  pretty = ppDataInfo Type.Pretty.defaultEnv True False
+  pretty = ppDataInfo Koka.Type.Pretty.defaultEnv True False
 
 ppDataInfo env showBody isExtend dataInfo
   = prettyDataInfo env showBody False isExtend dataInfo Private (repeat Private)
@@ -271,7 +271,7 @@ ppVis env vis
 
 
 instance Pretty SynInfo where
-  pretty info = ppSynInfo Type.Pretty.defaultEnv False True info Public
+  pretty info = ppSynInfo Koka.Type.Pretty.defaultEnv False True info Public
 
 ppSynInfo env publicOnly showBody (SynInfo name kind params scheme rank range doc) vis
     = if (publicOnly && isPrivate vis) then empty else 

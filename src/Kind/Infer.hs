@@ -23,7 +23,7 @@
 module Kind.Infer (inferKinds) where
 
 import Lib.Trace
--- import Type.Pretty
+-- import Koka.Type.Pretty
 
 import Data.Char(isAlphaNum)
 import Data.List(groupBy,intersperse,nubBy)
@@ -51,10 +51,10 @@ import Kind.Constructors
 import Kind.Newtypes
 import Kind.Synonym
 
-import Type.Type
-import Type.Assumption
-import Type.TypeVar( tvsIsEmpty, ftv, subNew, (|->) )
-import Type.Pretty
+import Koka.Type.Type
+import Koka.Type.Assumption
+import Koka.Type.TypeVar( tvsIsEmpty, ftv, subNew, (|->) )
+import Koka.Type.Pretty
 
 import Kind.InferKind
 import Kind.InferMonad

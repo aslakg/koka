@@ -6,7 +6,7 @@
 -- found in the file "license.txt" at the root of this distribution.
 -----------------------------------------------------------------------------
 
-module Type.Assumption (
+module Koka.Type.Assumption (
                     -- * Typothesis
                       Gamma, NameInfo(..)
                     , gammaInit
@@ -43,9 +43,9 @@ import qualified Common.NameMap as M
 import Common.Name
 import Common.ColorScheme
 import Common.Syntax( Visibility(Public), Target )
-import Type.Type
-import Type.TypeVar
-import Type.Pretty
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Pretty
 import qualified Core.Core as Core
 import qualified Core.CoreVar as CoreVar
 
@@ -285,7 +285,7 @@ instance Show Gamma where
 
 instance Pretty Gamma where
   pretty g
-    = ppGamma Type.Pretty.defaultEnv g
+    = ppGamma Koka.Type.Pretty.defaultEnv g
     
     
 ppGamma :: Env -> Gamma -> Doc

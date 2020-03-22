@@ -36,9 +36,9 @@ import Common.Name
 import Common.Syntax
 
 import Kind.Pretty()
-import Type.Type
-import Type.Pretty
-import Type.TypeVar()
+import Koka.Type.Type
+import Koka.Type.Pretty
+import Koka.Type.TypeVar()
 
 import qualified Core.Core as Core
 
@@ -100,7 +100,7 @@ instance Show Synonyms where
 
 instance Pretty Synonyms where
   pretty syns
-    = ppSynonyms Type.Pretty.defaultEnv syns
+    = ppSynonyms Koka.Type.Pretty.defaultEnv syns
     
 ppSynonyms showOptions (Synonyms m)
     = vcat [ppSynInfo showOptions False True sscheme Public

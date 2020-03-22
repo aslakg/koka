@@ -36,7 +36,7 @@ import Kind.Newtypes          ( Newtypes, newtypesEmpty, newtypesCompose, extrac
 import Kind.Constructors      ( Constructors, constructorsEmpty, constructorsCompose, extractConstructors )
 import Kind.Assumption        ( KGamma, kgammaInit, extractKGamma, kgammaUnion )
 
-import Type.Assumption        ( Gamma, gammaInit, gammaUnion, extractGamma)
+import Koka.Type.Assumption        ( Gamma, gammaInit, gammaUnion, extractGamma)
 
 import Syntax.RangeMap
 import Compiler.Package       ( PackageName, joinPkg )

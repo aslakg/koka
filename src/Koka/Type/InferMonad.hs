@@ -6,7 +6,7 @@
 -- found in the file "license.txt" at the root of this distribution.
 -----------------------------------------------------------------------------
 
-module Type.InferMonad( Inf, InfGamma
+module Koka.Type.InferMonad( Inf, InfGamma
                       , runInfer, tryRun
 
                       -- * substitutation
@@ -85,18 +85,18 @@ import Kind.Kind
 import Kind.ImportMap
 import Kind.Newtypes
 import Kind.Synonym
-import Type.Type
-import Type.TypeVar
-import Type.Kind
-import qualified Type.Pretty as Pretty
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Kind
+import qualified Koka.Type.Pretty as Pretty
 import qualified Core.Core as Core
 
-import Type.Operations hiding (instantiate, instantiateNoEx)
-import qualified Type.Operations as Op
-import Type.Assumption
-import Type.InfGamma
+import Koka.Type.Operations hiding (instantiate, instantiateNoEx)
+import qualified Koka.Type.Operations as Op
+import Koka.Type.Assumption
+import Koka.Type.InfGamma
 
-import Type.Unify
+import Koka.Type.Unify
 import Common.Message( docFromRange, table, tablex)
 
 import Core.Pretty()

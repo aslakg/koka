@@ -9,7 +9,7 @@
 -- Functions on type variables, including type variable substitution.
 -----------------------------------------------------------------------------
 
-module Type.TypeVar(-- * Type substitutable entities
+module Koka.Type.TypeVar(-- * Type substitutable entities
                       HasTypeVar( substitute, ftv, btv )
                     , (|->) 
                     , alltv, fuv, fbv, fsv
@@ -46,8 +46,8 @@ import qualified Data.Map as M
 import qualified Data.Set as S
 import Common.Failure ( assertion )
 import Kind.Pretty    ( ) -- instances
-import Type.Type
-import Type.Kind
+import Koka.Type.Type
+import Koka.Type.Kind
 import Kind.Kind
 
 {--------------------------------------------------------------------------

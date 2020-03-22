@@ -21,11 +21,11 @@ import Data.Char
 import qualified Data.Set as S
 
 -- import Kind.Kind
-import Type.Type
--- import Type.TypeVar
--- import Type.Kind( getKind )
--- import Type.Assumption( getArity )
-import qualified Type.Pretty as Pretty
+import Koka.Type.Type
+-- import Koka.Type.TypeVar
+-- import Koka.Type.Kind( getKind )
+-- import Koka.Type.Assumption( getArity )
+import qualified Koka.Type.Pretty as Pretty
 
 import Lib.PPrint
 -- import qualified Lib.PPrint

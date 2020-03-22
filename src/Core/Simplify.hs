@@ -20,9 +20,9 @@ import Common.Syntax
 import Common.NamePrim( nameEffectOpen, nameToAny, nameEnsureK, nameReturn, nameOptionalNone, nameIsValidK
                        , nameLift, nameBind )
 import Common.Unique
-import Type.Type
-import Type.TypeVar
-import Type.Pretty as Pretty
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Pretty as Pretty
 import Core.Core
 import Core.Pretty
 import Core.CoreVar

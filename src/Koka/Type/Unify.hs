@@ -10,7 +10,7 @@
 -- Unification and subsumption
 -----------------------------------------------------------------------------
 
-module Type.Unify ( Unify, UnifyError(..), runUnify
+module Koka.Type.Unify ( Unify, UnifyError(..), runUnify
                   , unify
                   , subsume
                   , overlaps
@@ -29,11 +29,11 @@ import Common.Name
 import Common.NamePrim( namePredHeapDiv, nameTpCont )
 import Kind.Kind
 import qualified Kind.Unify( match )
-import Type.Type
-import Type.TypeVar
-import Type.Kind
-import Type.Pretty()
-import Type.Operations
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Kind
+import Koka.Type.Pretty()
+import Koka.Type.Operations
 import qualified Core.Core as Core
 
 import qualified Lib.Trace(trace)

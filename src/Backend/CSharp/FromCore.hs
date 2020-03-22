@@ -23,11 +23,11 @@ import Data.List( transpose )
 import Lib.PPrint
 
 import Kind.Kind
-import Type.Type
-import Type.TypeVar
-import Type.Kind( getKind )
-import Type.Assumption( getArity )
-import Type.Pretty( niceType )
+import Koka.Type.Type
+import Koka.Type.TypeVar
+import Koka.Type.Kind( getKind )
+import Koka.Type.Assumption( getArity )
+import Koka.Type.Pretty( niceType )
 
 import Common.Syntax( Target(..) )
 import Common.Name
@@ -40,7 +40,7 @@ import Common.File(notdir)
 import Core.Core
 import Core.Pretty
 import Core.CoreVar
-import Type.Pretty(defaultEnv)
+import Koka.Type.Pretty(defaultEnv)
 -- import Lib.Trace ( trace )
 
 --------------------------------------------------------------------------

@@ -24,9 +24,9 @@ import qualified Common.NameMap as M
 import Common.Failure( failure )
 import Common.Name
 import Common.Syntax  ( Visibility(..))
-import Type.Type
+import Koka.Type.Type
 
-import Type.Pretty
+import Koka.Type.Pretty
 import Lib.PPrint
 import qualified Data.List as L
 
@@ -99,7 +99,7 @@ instance Show Newtypes where
 
 instance Pretty Newtypes where
   pretty syns
-    = ppNewtypes Type.Pretty.defaultEnv syns
+    = ppNewtypes Koka.Type.Pretty.defaultEnv syns
     
 ppNewtypes showOptions (Newtypes m)
     = vcat [fill 8 (pretty name) <.> colon <+>

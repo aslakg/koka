@@ -24,10 +24,10 @@ import Lib.PPrint
 import Common.Range
 import Common.Name
 import Common.NamePrim (nameUnit, nameNull, isNameTuple)
-import Type.Type
+import Koka.Type.Type
 import Kind.Kind
-import Type.TypeVar
-import Type.Pretty() 
+import Koka.Type.TypeVar
+import Koka.Type.Pretty()
 
 newtype RangeMap = RM [(Range,RangeInfo)]
 

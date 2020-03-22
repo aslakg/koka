@@ -28,8 +28,8 @@ import Interpreter.Interpret  ( interpret  )
 import Kind.ImportMap         ( importsEmpty )
 import Kind.Synonym           ( synonymsIsEmpty, ppSynonyms, synonymsFilter )
 import Kind.Assumption        ( kgammaFilter )
-import Type.Assumption        ( ppGamma, gammaFilter )
-import Type.Pretty            ( ppScheme, Env(context,importsMap) )
+import Koka.Type.Assumption        ( ppGamma, gammaFilter )
+import Koka.Type.Pretty            ( ppScheme, Env(context,importsMap) )
 
 
 

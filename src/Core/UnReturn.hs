@@ -32,11 +32,11 @@ import Common.Error
 import Common.Syntax
 
 import Kind.Kind
-import Type.Type
-import Type.Kind
-import Type.TypeVar
-import Type.Pretty hiding (Env)
-import qualified Type.Pretty as Pretty
+import Koka.Type.Type
+import Koka.Type.Kind
+import Koka.Type.TypeVar
+import Koka.Type.Pretty hiding (Env)
+import qualified Koka.Type.Pretty as Pretty
 
 import Core.Core
 import qualified Core.Core as Core

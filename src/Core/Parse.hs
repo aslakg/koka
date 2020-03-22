@@ -30,8 +30,8 @@ import Kind.Kind
 import Kind.Synonym
 import Kind.ImportMap
 
-import Type.Type
-import Type.TypeVar
+import Koka.Type.Type
+import Koka.Type.TypeVar
 import Core.Core
 
 import Lib.Trace

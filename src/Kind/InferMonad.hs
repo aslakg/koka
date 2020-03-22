@@ -44,7 +44,7 @@ import Kind.Synonym
 import Kind.ImportMap
 
 import Syntax.Syntax
-import Type.Type
+import Koka.Type.Type
 
 import Syntax.RangeMap
 
