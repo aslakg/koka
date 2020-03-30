@@ -271,7 +271,7 @@ data KUserType k
   | TpCon      Name                  Range
   | TpParens   (KUserType k)         Range
   | TpAnn      (KUserType k)  k
-
+  deriving(Show)
 
 type UserType
   = KUserType UserKind
