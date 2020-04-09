@@ -26,6 +26,14 @@ module Compiler.Compile( -- * Compile
                        , Terminal(..)
                        , searchSource
                        , CompileTarget(..)
+                       , resolveImports
+                       , runIOErr
+                       , liftError
+                       , liftIO
+                       , lift
+                       , ModImport(..)
+                       , IOErr(..)
+                       , compileProgram'
                        ) where
 
 import Lib.Trace              ( trace )
