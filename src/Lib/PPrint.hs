@@ -15,7 +15,7 @@
 -----------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 module Lib.PPrint
-        ( Doc, Docs
+        ( Doc(..), Docs
         , Pretty(pretty,prettyList), putPretty
 
         , show, putDoc, hPutDoc, asString
